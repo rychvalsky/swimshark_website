@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+
+<html class="light" lang="sk"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kurzy a programy SwimShark</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300..800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "primary-dark": "#0f65bd",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                        "surface-light": "#ffffff",
+                        "surface-dark": "#1c2a36",
+                        "text-main": "#0d141b",
+                        "text-secondary": "#4c739a",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"],
+                        "body": ["Noto Sans", "sans-serif"],
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Lexend', 'Noto Sans', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-text-main dark:text-white transition-colors duration-200">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Header -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e7edf3] dark:border-b-gray-800 bg-surface-light dark:bg-surface-dark px-10 py-4 sticky top-0 z-50">
+<div class="flex items-center gap-4 text-text-main dark:text-white">
+<div class="size-8 text-primary">
+<span class="material-symbols-outlined text-4xl">pool</span>
+</div>
+<h2 class="text-text-main dark:text-white text-xl font-bold leading-tight tracking-[-0.015em]">SwimShark</h2>
+</div>
+<div class="flex flex-1 justify-end gap-8">
+<nav class="hidden md:flex items-center gap-9">
+<a class="text-text-main dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Domov</a>
+<a class="text-primary text-sm font-bold leading-normal" href="#">Kurzy</a>
+<a class="text-text-main dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">O nás</a>
+<a class="text-text-main dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Tréneri</a>
+<a class="text-text-main dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Kontakt</a>
+</nav>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-primary hover:bg-primary-dark transition-colors text-white text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Prihlásiť sa</span>
+</button>
+</div>
+</header>
+<!-- Hero Section -->
+<div class="relative w-full h-[500px] flex items-center justify-center bg-cover bg-center" data-alt="Modern indoor swimming pool with clear blue water" style='background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAgFjWOfpB-oAjgEjksd3YYYUaO_c0JfQ0LH-la3gpgU-pp3ssRQ7CI9PvHVVBDRblzAJYhWm1WlVSxVdKhVKW4g3PUconlSPtKrZ1NRQvOpy_sVppV3dtRhTywxm5i9rHX9hlKaKQJbk9wIh89zTT90uj5MzOzmIeCMMPvXiPnKmP8JmkXy7iUsYU8lhDNxQSVshpFSSdCC0GqOwkKLnDJnYINbDUcyfCrbne2Lxpkq5UBJXowa3wttw39yxMXiwks4rpU1uwVN9U");'>
+<div class="flex flex-col gap-6 text-center max-w-[800px] px-4 animate-fade-in-up">
+<h1 class="text-white text-5xl font-black leading-tight tracking-[-0.033em] drop-shadow-lg">
+                    Plávanie pre každého
+                </h1>
+<h2 class="text-white/90 text-lg font-normal leading-relaxed max-w-2xl mx-auto drop-shadow-md">
+                    Od prvých záberov vo vode až po zdokonaľovanie techniky a súťažné plávanie. Profesionálni tréneri, moderné prostredie a individuálny prístup.
+                </h2>
+<div class="flex flex-col sm:flex-row gap-4 justify-center mt-4">
+<button class="flex items-center justify-center rounded-lg h-12 px-8 bg-primary hover:bg-primary-dark text-white text-base font-bold transition-all shadow-lg hover:shadow-xl hover:-translate-y-1">
+                        Vybrať kurz
+                    </button>
+<button class="flex items-center justify-center rounded-lg h-12 px-8 bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/30 text-white text-base font-bold transition-all">
+                        Skúšobná lekcia
+                    </button>
+</div>
+</div>
+</div>
+<main class="layout-container flex flex-col items-center py-10 px-4 md:px-10 lg:px-20">
+<!-- Category Tabs -->
+<div class="w-full max-w-[1200px] mb-12">
+<div class="flex flex-wrap justify-center gap-2 md:gap-8 border-b border-gray-200 dark:border-gray-700 pb-1">
+<button class="px-6 py-4 text-primary border-b-[3px] border-primary font-bold text-sm tracking-wide transition-colors">
+                        Všetky programy
+                    </button>
+<button class="px-6 py-4 text-text-secondary dark:text-gray-400 hover:text-primary dark:hover:text-primary border-b-[3px] border-transparent hover:border-primary/30 font-bold text-sm tracking-wide transition-colors">
+                        Pre deti
+                    </button>
+<button class="px-6 py-4 text-text-secondary dark:text-gray-400 hover:text-primary dark:hover:text-primary border-b-[3px] border-transparent hover:border-primary/30 font-bold text-sm tracking-wide transition-colors">
+                        Pre dospelých
+                    </button>
+<button class="px-6 py-4 text-text-secondary dark:text-gray-400 hover:text-primary dark:hover:text-primary border-b-[3px] border-transparent hover:border-primary/30 font-bold text-sm tracking-wide transition-colors">
+                        Individuálne
+                    </button>
+</div>
+</div>
+<!-- Kids Section -->
+<section class="w-full max-w-[1200px] mb-20">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 gap-4">
+<div>
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-primary text-3xl">child_care</span>
+<h2 class="text-3xl font-bold text-text-main dark:text-white">Kurzy pre deti</h2>
+</div>
+<p class="text-text-secondary dark:text-gray-400 max-w-2xl">
+                            Zábavné a bezpečné lekcie pre najmenších plavcov pod dohľadom certifikovaných inštruktorov.
+                        </p>
+</div>
+<a class="text-primary font-bold hover:underline flex items-center gap-1 group" href="#">
+                        Všetky detské kurzy 
+                        <span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="bg-surface-light dark:bg-surface-dark rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100 dark:border-gray-800 flex flex-col group h-full">
+<div class="relative h-56 w-full overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Happy baby swimming with parent in pool" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDYtWBOgVse5FyvbMHb1vvxKQQqsUZtRUdPSuwYjEzld6m2dq7XoQp-3_Rk6Bt_-3mKXv2AFK9r5T6rkw3-GOd3UZZLfZY_rQInj_AGwD4vOH3J2mfcj11_AfDq0QU4h5-1SLACXy3mS1c5HM3N-o1froiQeCF99xIBfIo_EZ8u7Bk1QJN0ZAZ8hmmRAyJzVdmKY-d7jkfT_tcYIBDobWMRjxeoqiEWVlPl1ixaqEviP2x1PuoF_FBJc_7zNQokkdTN-6IRLls6XHY");'></div>
+<div class="absolute top-4 left-4 bg-primary text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider shadow-sm">
+                                6-18 Mesiacov
+                            </div>
+</div>
+<div class="p-6 flex flex-col flex-1">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-xl font-bold text-text-main dark:text-white group-hover:text-primary transition-colors">Baby Shark</h3>
+<span class="material-symbols-outlined text-text-secondary">water_medium</span>
+</div>
+<p class="text-text-secondary dark:text-gray-400 text-sm mb-6 line-clamp-2">
+                                Zoznamovanie s vodou v teplom bazéne za prítomnosti rodičov. Budovanie dôvery a základných reflexov.
+                            </p>
+<div class="mt-auto space-y-3 mb-6">
+<div class="flex items-center gap-3 text-sm text-text-main dark:text-gray-300">
+<span class="material-symbols-outlined text-primary text-lg">schedule</span>
+<span>30 minút / lekcia</span>
+</div>
+<div class="flex items-center gap-3 text-sm text-text-main dark:text-gray-300">
+<span class="material-symbols-outlined text-primary text-lg">calendar_today</span>
+<span>2x týždenne</span>
+</div>
+<div class="flex items-center gap-3 text-sm text-text-main dark:text-gray-300">
+<span class="material-symbols-outlined text-primary text-lg">pool</span>
+<span>Malý bazén (32°C)</span>
+</div>
+</div>
+<button class="w-full h-11 rounded-lg border border-primary text-primary hover:bg-primary hover:text-white font-bold text-sm transition-all flex items-center justify-center gap-2">
+                                Detail kurzu
+                            </button>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-light dark:bg-surface-dark rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100 dark:border-gray-800 flex flex-col group h-full">
+<div class="relative h-56 w-full overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Young child learning to swim with floaties" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB5V2MqgSXxKQaYEk-w6nypQXTv5KjbwVRCFZQgqaVL7HFq3Ds55Ij0t3M4pGwAnYuW7BRlbUoJqG2bxIpbcyIAfd44mob-WpcWDBfP328ao3HcHfPxAGA4ZQMlQxBfWzqE7J6IiwNbj0HbHzMqbdIvScULm_q-VBPXHuleO475kJA9CgzLxG1vWmA8MNPl64VUVZRZNMPHf9YhthgrC4pwL4NisSNyDtOIh4f6J-HKbpvfT_jLOwpPIJ3s8BwBmQXfPW37iPDj4zE");'></div>
+<div class="absolute top-4 left-4 bg-teal-500 text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider shadow-sm">
+                                3-5 Rokov
+                            </div>
+</div>
+<div class="p-6 flex flex-col flex-1">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-xl font-bold text-text-main dark:text-white group-hover:text-primary transition-colors">Sharky Kids</h3>
+<span class="material-symbols-outlined text-text-secondary">waves</span>
+</div>
+<p class="text-text-secondary dark:text-gray-400 text-sm mb-6 line-clamp-2">
+                                Základy plávania hravou formou. Nácvik splývania, dýchania a kopania bez pomôcok.
+                            </p>
+<div class="mt-auto space-y-3 mb-6">
+<div class="flex items-center gap-3 text-sm text-text-main dark:text-gray-300">
+<span class="material-symbols-outlined text-primary text-lg">schedule</span>
+<span>45 minút / lekcia</span>
+</div>
+<div class="flex items-center gap-3 text-sm text-text-main dark:text-gray-300">
+<span class="material-symbols-outlined text-primary text-lg">calendar_today</span>
+<span>2x týždenne</span>
+</div>
+<div class="flex items-center gap-3 text-sm text-text-main dark:text-gray-300">
+<span class="material-symbols-outlined text-primary text-lg">pool</span>
+<span>Výukový bazén</span>
+</div>
+</div>
+<button class="w-full h-11 rounded-lg border border-primary text-primary hover:bg-primary hover:text-white font-bold text-sm transition-all flex items-center justify-center gap-2">
+                                Detail kurzu
+                            </button>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-light dark:bg-surface-dark rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100 dark:border-gray-800 flex flex-col group h-full">
+<div class="relative h-56 w-full overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Older child swimming freestyle stroke" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCEnmtROQfps78TxeRi2QnX1Oh9tm6CHqmAAwEeCOL4ldY0eerBv_4DdxGoYMZppMNmR8NUt7USi2V-_1srhkrj4OmGO_HOMDY4Z780fpkOkD0PlSABuCN4oZJhwzx0glrq7abTsFd83aNtxkIZsmjN2k8X8EGm8AXQNUSWxF571bFpKX24__nKFAaSuLFQhJ42mdlUZpbFty-B0v_LXs-gwFfVS_DOj3Jh8HjeB2aM6uxTb_QxhfT8Gn29BSqD44m1g47PJyOl8mA");'></div>
+<div class="absolute top-4 left-4 bg-indigo-500 text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider shadow-sm">
+                                6-12 Rokov
+                            </div>
+</div>
+<div class="p-6 flex flex-col flex-1">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-xl font-bold text-text-main dark:text-white group-hover:text-primary transition-colors">Junior Swimmers</h3>
+<span class="material-symbols-outlined text-text-secondary">scuba_diving</span>
+</div>
+<p class="text-text-secondary dark:text-gray-400 text-sm mb-6 line-clamp-2">
+                                Zdokonaľovanie techniky plaveckých štýlov prsia, kraul a znak. Príprava na preteky.
+                            </p>
+<div class="mt-auto space-y-3 mb-6">
+<div class="flex items-center gap-3 text-sm text-text-main dark:text-gray-300">
+<span class="material-symbols-outlined text-primary text-lg">schedule</span>
+<span>60 minút / lekcia</span>
+</div>
+<div class="flex items-center gap-3 text-sm text-text-main dark:text-gray-300">
+<span class="material-symbols-outlined text-primary text-lg">calendar_today</span>
+<span>3x týždenne</span>
+</div>
+<div class="flex items-center gap-3 text-sm text-text-main dark:text-gray-300">
+<span class="material-symbols-outlined text-primary text-lg">pool</span>
+<span>Plavecký bazén (25m)</span>
+</div>
+</div>
+<button class="w-full h-11 rounded-lg border border-primary text-primary hover:bg-primary hover:text-white font-bold text-sm transition-all flex items-center justify-center gap-2">
+                                Detail kurzu
+                            </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Adults Section -->
+<section class="w-full max-w-[1200px] mb-20">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 gap-4">
+<div>
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-primary text-3xl">directions_run</span>
+<h2 class="text-3xl font-bold text-text-main dark:text-white">Kurzy pre dospelých</h2>
+</div>
+<p class="text-text-secondary dark:text-gray-400 max-w-2xl">
+                            Nikdy nie je neskoro naučiť sa plávať alebo zlepšiť svoju kondíciu a techniku.
+                        </p>
+</div>
+<a class="text-primary font-bold hover:underline flex items-center gap-1 group" href="#">
+                        Všetky dospelácke kurzy 
+                        <span class="material-symbols-outlined text-sm transition-transform group-hover:translate-x-1">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Card 4 -->
+<div class="bg-surface-light dark:bg-surface-dark rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100 dark:border-gray-800 flex flex-col group h-full">
+<div class="relative h-56 w-full overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Adult learning to swim with instructor support" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCkyvSezjpyjEb4cMxOIFCdg5LIwKdL9Fn1-u23QYMsq8qYXwgePl7iQgJpjlXFzpeNvKcpSlm2zlOeDULry7dqXutvBjM6XzSCXbwiQlKudy2D_9UA7fEELp59MVEYuZac97EFhDGlp1TmFrDx8fHf414igqwgsjpXSz8t7H7ki0GpUMWQEqgrwi_n1tnR3hto8dMF8wYA8_xdNMLyiq8YaFTKWXAD_DYdPCRqj4J2wmYUYO8IpYhhmm0XHSF9UM-o7s5Hv-xQbUU");'></div>
+<div class="absolute top-4 left-4 bg-orange-500 text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider shadow-sm">
+                                Začiatočníci
+                            </div>
+</div>
+<div class="p-6 flex flex-col flex-1">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-xl font-bold text-text-main dark:text-white group-hover:text-primary transition-colors">Plávanie pre dospelých</h3>
+<span class="material-symbols-outlined text-text-secondary">help_center</span>
+</div>
+<p class="text-text-secondary dark:text-gray-400 text-sm mb-6 line-clamp-2">
+                                Prekonanie strachu z vody, základy dýchania a splývania. Trpezlivý prístup.
+                            </p>
+<div class="mt-auto space-y-3 mb-6">
+<div class="flex items-center gap-3 text-sm text-text-main dark:text-gray-300">
+<span class="material-symbols-outlined text-primary text-lg">schedule</span>
+<span>60 minút / lekcia</span>
+</div>
+<div class="flex items-center gap-3 text-sm text-text-main dark:text-gray-300">
+<span class="material-symbols-outlined text-primary text-lg">groups</span>
+<span>Max 6 osôb</span>
+</div>
+<div class="flex items-center gap-3 text-sm text-text-main dark:text-gray-300">
+<span class="material-symbols-outlined text-primary text-lg">pool</span>
+<span>Výukový bazén</span>
+</div>
+</div>
+<button class="w-full h-11 rounded-lg border border-primary text-primary hover:bg-primary hover:text-white font-bold text-sm transition-all flex items-center justify-center gap-2">
+                                Detail kurzu
+                            </button>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="bg-surface-light dark:bg-surface-dark rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100 dark:border-gray-800 flex flex-col group h-full">
+<div class="relative h-56 w-full overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Athletic swimmer swimming fast in pool lane" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD_X5pINReVyqEOh2QPHlOUrUR0DaSrA6dm-xbPUgTyuqKSiQtBKKgJbron332VFED4yVvA1-LvULIKrh4Fkmm1Go182LIArEso8bsKgc9bsVpZwOvyDAzznzXWf1QhOMBe9VlZEWZI3Em_rkGxhWtDfy-9t0tIMp5uYDugoTdLU3RkyFjhoZebXrC1b0tx0l5BRtyIehgL6-9hWQgpBsbqs1b_7972tB9pW5p_IS1ASXyfgvPJuY4AyL_qagLfZh7_OnnY_0j6HdU");'></div>
+<div class="absolute top-4 left-4 bg-emerald-600 text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider shadow-sm">
+                                Pokročilí
+                            </div>
+</div>
+<div class="p-6 flex flex-col flex-1">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-xl font-bold text-text-main dark:text-white group-hover:text-primary transition-colors">Kondičné plávanie</h3>
+<span class="material-symbols-outlined text-text-secondary">fitness_center</span>
+</div>
+<p class="text-text-secondary dark:text-gray-400 text-sm mb-6 line-clamp-2">
+                                Zlepšenie kondície a štýlu pre pokročilých. Vhodné ako kompenzácia k sedavému zamestnaniu.
+                            </p>
+<div class="mt-auto space-y-3 mb-6">
+<div class="flex items-center gap-3 text-sm text-text-main dark:text-gray-300">
+<span class="material-symbols-outlined text-primary text-lg">schedule</span>
+<span>60 minút / lekcia</span>
+</div>
+<div class="flex items-center gap-3 text-sm text-text-main dark:text-gray-300">
+<span class="material-symbols-outlined text-primary text-lg">speed</span>
+<span>Vysoká intenzita</span>
+</div>
+<div class="flex items-center gap-3 text-sm text-text-main dark:text-gray-300">
+<span class="material-symbols-outlined text-primary text-lg">pool</span>
+<span>Plavecký bazén (25m)</span>
+</div>
+</div>
+<button class="w-full h-11 rounded-lg border border-primary text-primary hover:bg-primary hover:text-white font-bold text-sm transition-all flex items-center justify-center gap-2">
+                                Detail kurzu
+                            </button>
+</div>
+</div>
+<!-- Card 6 -->
+<div class="bg-surface-light dark:bg-surface-dark rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100 dark:border-gray-800 flex flex-col group h-full">
+<div class="relative h-56 w-full overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Triathlete swimming in open water wearing wetsuit" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAlVQOPzkZatKsWBGqljqJllCT89MILWfyZBv4ZqNTCgYtWAO6FfkKZMMCF29a-Oh9EcTsujYTeap0UpXnQlzuJMWbmIwMt3m3sE5YumJw2_bom1W1vdJclNr60EJRHiCd6BEMkaCRTPl0inE6C7objcFIE1jQiaSnSxqSCWXUx-nhjUx9RKxyw5LM2iZhEm8OrayK1t6UONpKjCnynTtFdoRqs3TxWo847Ftsjs4YMdnT3L1dl9gbzAnGZmFxczkTEAXo-6qZ-U7I");'></div>
+<div class="absolute top-4 left-4 bg-purple-600 text-white text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider shadow-sm">
+                                Expert
+                            </div>
+</div>
+<div class="p-6 flex flex-col flex-1">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-xl font-bold text-text-main dark:text-white group-hover:text-primary transition-colors">Triatlonová príprava</h3>
+<span class="material-symbols-outlined text-text-secondary">trophy</span>
+</div>
+<p class="text-text-secondary dark:text-gray-400 text-sm mb-6 line-clamp-2">
+                                Špecializovaný tréning zameraný na techniku a vytrvalosť pre triatlonistov.
+                            </p>
+<div class="mt-auto space-y-3 mb-6">
+<div class="flex items-center gap-3 text-sm text-text-main dark:text-gray-300">
+<span class="material-symbols-outlined text-primary text-lg">schedule</span>
+<span>90 minút / lekcia</span>
+</div>
+<div class="flex items-center gap-3 text-sm text-text-main dark:text-gray-300">
+<span class="material-symbols-outlined text-primary text-lg">timer</span>
+<span>Intervalový tréning</span>
+</div>
+<div class="flex items-center gap-3 text-sm text-text-main dark:text-gray-300">
+<span class="material-symbols-outlined text-primary text-lg">pool</span>
+<span>Plavecký bazén (50m)</span>
+</div>
+</div>
+<button class="w-full h-11 rounded-lg border border-primary text-primary hover:bg-primary hover:text-white font-bold text-sm transition-all flex items-center justify-center gap-2">
+                                Detail kurzu
+                            </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Promo Banner -->
+<section class="w-full max-w-[1200px] mb-20 rounded-2xl bg-gradient-to-r from-blue-900 to-primary p-8 md:p-12 relative overflow-hidden text-white">
+<div class="absolute top-0 right-0 w-64 h-64 bg-white opacity-5 rounded-full -mr-16 -mt-16 pointer-events-none"></div>
+<div class="absolute bottom-0 left-0 w-48 h-48 bg-white opacity-5 rounded-full -ml-16 -mb-16 pointer-events-none"></div>
+<div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
+<div class="max-w-xl">
+<h2 class="text-3xl font-black mb-4">Neviete si vybrať ten správny kurz?</h2>
+<p class="text-blue-100 text-lg mb-0">
+                            Príďte na nezáväznú skúšobnú lekciu zdarma! Náš tréner posúdi vašu úroveň a odporučí ideálny program.
+                        </p>
+</div>
+<button class="whitespace-nowrap bg-white text-primary hover:bg-gray-100 font-bold py-4 px-8 rounded-lg shadow-lg transform transition hover:-translate-y-1">
+                        Rezervovať skúšobnú lekciu
+                    </button>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="w-full max-w-[1200px] mb-10">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold text-text-main dark:text-white mb-4">Čo o nás hovoria</h2>
+<div class="h-1 w-20 bg-primary mx-auto rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="bg-white dark:bg-surface-dark p-6 rounded-xl border border-gray-100 dark:border-gray-800 shadow-sm">
+<div class="flex gap-1 text-amber-400 mb-4">
+<span class="material-symbols-outlined text-xl">star</span>
+<span class="material-symbols-outlined text-xl">star</span>
+<span class="material-symbols-outlined text-xl">star</span>
+<span class="material-symbols-outlined text-xl">star</span>
+<span class="material-symbols-outlined text-xl">star</span>
+</div>
+<p class="text-text-main dark:text-gray-300 italic mb-6">
+                            "Môj syn sa bál vody, ale vďaka inštruktorom v Baby Shark kurze sa teraz teší na každú lekciu. Úžasný prístup!"
+                        </p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center text-gray-500 font-bold">Z</div>
+<div>
+<p class="font-bold text-sm text-text-main dark:text-white">Zuzana Kováčová</p>
+<p class="text-xs text-text-secondary">Mamička 4-ročného Jakubka</p>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-surface-dark p-6 rounded-xl border border-gray-100 dark:border-gray-800 shadow-sm">
+<div class="flex gap-1 text-amber-400 mb-4">
+<span class="material-symbols-outlined text-xl">star</span>
+<span class="material-symbols-outlined text-xl">star</span>
+<span class="material-symbols-outlined text-xl">star</span>
+<span class="material-symbols-outlined text-xl">star</span>
+<span class="material-symbols-outlined text-xl">star</span>
+</div>
+<p class="text-text-main dark:text-gray-300 italic mb-6">
+                            "Kondičné plávanie mi pomohlo zbaviť sa bolestí chrbta. Bazény sú vždy čisté a atmosféra príjemná."
+                        </p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center text-gray-500 font-bold">M</div>
+<div>
+<p class="font-bold text-sm text-text-main dark:text-white">Michal Novák</p>
+<p class="text-xs text-text-secondary">Program Kondičné plávanie</p>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-surface-dark p-6 rounded-xl border border-gray-100 dark:border-gray-800 shadow-sm">
+<div class="flex gap-1 text-amber-400 mb-4">
+<span class="material-symbols-outlined text-xl">star</span>
+<span class="material-symbols-outlined text-xl">star</span>
+<span class="material-symbols-outlined text-xl">star</span>
+<span class="material-symbols-outlined text-xl">star</span>
+<span class="material-symbols-outlined text-xl">star_half</span>
+</div>
+<p class="text-text-main dark:text-gray-300 italic mb-6">
+                            "Skvelá príprava na môj prvý triatlon. Technika kraulu sa mi zlepšila o 100%. Odporúčam každému."
+                        </p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-gray-200 flex items-center justify-center text-gray-500 font-bold">P</div>
+<div>
+<p class="font-bold text-sm text-text-main dark:text-white">Peter Horváth</p>
+<p class="text-xs text-text-secondary">Triatlonista amatér</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-light dark:bg-surface-dark border-t border-gray-200 dark:border-gray-800 pt-16 pb-8 px-10">
+<div class="layout-container mx-auto max-w-[1200px]">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-2 text-text-main dark:text-white mb-6">
+<div class="size-6 text-primary">
+<span class="material-symbols-outlined text-3xl">pool</span>
+</div>
+<h2 class="text-lg font-bold">SwimShark</h2>
+</div>
+<p class="text-text-secondary dark:text-gray-400 text-sm leading-relaxed mb-6">
+                            Vaša cesta k dokonalému plávaniu začína tu. Profesionálne kurzy pre všetky vekové kategórie v moderných priestoroch.
+                        </p>
+<div class="flex gap-4">
+<a class="text-text-secondary hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="text-text-secondary hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">share</span></a>
+<a class="text-text-secondary hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">mail</span></a>
+</div>
+</div>
+<div>
+<h3 class="font-bold text-text-main dark:text-white mb-6">Rýchle odkazy</h3>
+<ul class="flex flex-col gap-3 text-sm text-text-secondary dark:text-gray-400">
+<li><a class="hover:text-primary transition-colors" href="#">Domov</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Všetky kurzy</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Cenník</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Rozvrh</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">FAQ</a></li>
+</ul>
+</div>
+<div>
+<h3 class="font-bold text-text-main dark:text-white mb-6">Programy</h3>
+<ul class="flex flex-col gap-3 text-sm text-text-secondary dark:text-gray-400">
+<li><a class="hover:text-primary transition-colors" href="#">Plávanie detí</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Dospelí začiatočníci</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Kondičné plávanie</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Individuálne lekcie</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Letné tábory</a></li>
+</ul>
+</div>
+<div>
+<h3 class="font-bold text-text-main dark:text-white mb-6">Kontakt</h3>
+<ul class="flex flex-col gap-4 text-sm text-text-secondary dark:text-gray-400">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-lg mt-0.5">location_on</span>
+<span>Plaváreň Pasienky<br/>Junácka 4, 831 04 Bratislava</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-lg">call</span>
+<span>+421 900 123 456</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-lg">mail</span>
+<span>info@swimshark.sk</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="border-t border-gray-200 dark:border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-text-secondary dark:text-gray-500">
+<p>© 2024 SwimShark Plavecká Škola. Všetky práva vyhradené.</p>
+<div class="flex gap-6">
+<a class="hover:text-primary" href="#">Ochrana osobných údajov</a>
+<a class="hover:text-primary" href="#">Obchodné podmienky</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</body></html>

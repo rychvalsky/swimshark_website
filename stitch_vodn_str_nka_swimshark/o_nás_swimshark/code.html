@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+
+<html class="light" lang="sk"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>O nás - SwimShark</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-50 overflow-x-hidden">
+<!-- Top Navigation -->
+<div class="sticky top-0 z-50 w-full bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-sm border-b border-slate-200 dark:border-slate-800">
+<div class="flex justify-center w-full px-4 md:px-10 py-3">
+<header class="flex w-full max-w-[1280px] items-center justify-between whitespace-nowrap">
+<div class="flex items-center gap-3 text-slate-900 dark:text-white">
+<span class="material-symbols-outlined text-primary text-3xl">pool</span>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">SwimShark</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8 items-center">
+<nav class="flex items-center gap-6">
+<a class="text-slate-700 hover:text-primary dark:text-slate-300 dark:hover:text-primary text-sm font-medium transition-colors" href="#">Domov</a>
+<a class="text-slate-700 hover:text-primary dark:text-slate-300 dark:hover:text-primary text-sm font-medium transition-colors" href="#">Kurzy</a>
+<a class="text-primary font-bold text-sm leading-normal" href="#">O nás</a>
+<a class="text-slate-700 hover:text-primary dark:text-slate-300 dark:hover:text-primary text-sm font-medium transition-colors" href="#">Kontakt</a>
+</nav>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-6 bg-primary hover:bg-blue-600 transition-colors text-white text-sm font-bold shadow-sm">
+<span class="truncate">Prihlásiť sa</span>
+</button>
+</div>
+<!-- Mobile Menu Button (Placeholder) -->
+<div class="md:hidden">
+<button class="text-slate-900 dark:text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+</div>
+</div>
+<!-- Hero Section -->
+<div class="relative w-full">
+<div class="flex min-h-[500px] flex-col justify-center items-center bg-cover bg-center bg-no-repeat px-4 py-20" data-alt="Close up of clear blue swimming pool water with lane markers" style='background-image: linear-gradient(rgba(16, 25, 34, 0.5) 0%, rgba(16, 25, 34, 0.7) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCjw8P9T-XXaPY37tfoGpK-PqhZb5DZsHkkMvhaw4x-RT8Fm9mpD752JGwvCqPMhgKHxIgIcoiBpA22fBI353vNFJrZ_UbhZOJHiWuV419dU3tycRfJTXSDO0MDDKGkYIBxoabrtdjLW9TrR8fjy8mkSqHeh7Ia5mdOQIsXCR6lRPW4avE21N0EXHhTL5welrAZcpxx1ncN7ESbF3jBmzpkF72ob-BTH-FVqr_6jqlJ55EHUJT2gk4tHmMeQjDsUT4568hMoEgmjj8");'>
+<div class="flex flex-col gap-6 text-center max-w-[800px] animate-fade-in-up">
+<span class="text-primary font-bold tracking-wider uppercase text-sm bg-white/10 px-3 py-1 rounded-full w-fit mx-auto backdrop-blur-md border border-white/20">O nás</span>
+<h1 class="text-white text-4xl md:text-6xl font-black leading-tight tracking-tight">
+                    Budujeme sebavedomých plavcov od roku 2013
+                </h1>
+<h2 class="text-slate-200 text-lg md:text-xl font-normal leading-relaxed max-w-[600px] mx-auto">
+                    Sme profesionálna plavecká škola s vášňou pre vodu. Naučíme vás a vaše deti plávať technicky správne, bezpečne a s radosťou.
+                </h2>
+<div class="pt-4">
+<button class="cursor-pointer inline-flex items-center justify-center rounded-lg h-12 px-8 bg-primary hover:bg-blue-600 text-white text-base font-bold transition-all transform hover:scale-105 shadow-lg">
+                        Spoznajte náš tím
+                    </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Stats Section -->
+<div class="w-full bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800">
+<div class="max-w-[1280px] mx-auto px-4 md:px-10 py-12">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left">
+<div class="flex flex-col md:flex-row items-center gap-4 p-4">
+<div class="bg-primary/10 rounded-full p-4 text-primary">
+<span class="material-symbols-outlined text-4xl">school</span>
+</div>
+<div>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-medium uppercase tracking-wide">Absolventov</p>
+<p class="text-slate-900 dark:text-white text-3xl font-bold">500+</p>
+</div>
+</div>
+<div class="flex flex-col md:flex-row items-center gap-4 p-4 border-l-0 md:border-l border-slate-100 dark:border-slate-800">
+<div class="bg-primary/10 rounded-full p-4 text-primary">
+<span class="material-symbols-outlined text-4xl">history</span>
+</div>
+<div>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-medium uppercase tracking-wide">Rokov skúseností</p>
+<p class="text-slate-900 dark:text-white text-3xl font-bold">10</p>
+</div>
+</div>
+<div class="flex flex-col md:flex-row items-center gap-4 p-4 border-l-0 md:border-l border-slate-100 dark:border-slate-800">
+<div class="bg-primary/10 rounded-full p-4 text-primary">
+<span class="material-symbols-outlined text-4xl">verified_user</span>
+</div>
+<div>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-medium uppercase tracking-wide">Certifikovaných trénerov</p>
+<p class="text-slate-900 dark:text-white text-3xl font-bold">15</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Philosophy Section -->
+<div class="w-full py-16 md:py-24 px-4 md:px-10 bg-background-light dark:bg-background-dark">
+<div class="max-w-[1280px] mx-auto flex flex-col gap-12">
+<div class="flex flex-col gap-4 text-center max-w-[720px] mx-auto">
+<h2 class="text-slate-900 dark:text-white text-3xl md:text-4xl font-bold leading-tight">
+                    Naša Filozofia
+                </h2>
+<p class="text-slate-600 dark:text-slate-300 text-lg leading-relaxed">
+                    Veríme, že plávanie je životná zručnosť, ktorá by mala byť prístupná pre každého v bezpečnom a podporujúcom prostredí.
+                </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Card 1 -->
+<div class="group flex flex-col gap-4 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 p-8 hover:shadow-lg transition-shadow duration-300">
+<div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-2xl">health_and_safety</span>
+</div>
+<div>
+<h3 class="text-slate-900 dark:text-white text-xl font-bold mb-2">Bezpečnosť na prvom mieste</h3>
+<p class="text-slate-500 dark:text-slate-400 leading-relaxed">
+                            Dôraz na bezpečné prostredie a neustály dozor počas všetkých lekcií. Každý tréner ovláda prvú pomoc.
+                        </p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group flex flex-col gap-4 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 p-8 hover:shadow-lg transition-shadow duration-300">
+<div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-2xl">sentiment_satisfied_alt</span>
+</div>
+<div>
+<h3 class="text-slate-900 dark:text-white text-xl font-bold mb-2">Zábavné učenie</h3>
+<p class="text-slate-500 dark:text-slate-400 leading-relaxed">
+                            Využívame hry a zábavné aktivity na budovanie pozitívneho vzťahu k vode, najmä pri práci s deťmi.
+                        </p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group flex flex-col gap-4 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 p-8 hover:shadow-lg transition-shadow duration-300">
+<div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-2xl">pool</span>
+</div>
+<div>
+<h3 class="text-slate-900 dark:text-white text-xl font-bold mb-2">Profesionálna technika</h3>
+<p class="text-slate-500 dark:text-slate-400 leading-relaxed">
+                            Naši tréneri používajú moderné a certifikované tréningové metódy zamerané na správnu biomechaniku pohybu.
+                        </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- History Timeline -->
+<div class="w-full py-16 px-4 md:px-10 bg-white dark:bg-slate-900 border-y border-slate-100 dark:border-slate-800">
+<div class="max-w-[800px] mx-auto">
+<h2 class="text-slate-900 dark:text-white text-3xl font-bold text-center mb-12">Naša Cesta</h2>
+<div class="grid grid-cols-[60px_1fr] gap-x-6">
+<!-- 2013 -->
+<div class="flex flex-col items-center">
+<div class="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex items-center justify-center text-primary z-10">
+<span class="material-symbols-outlined text-xl">flag</span>
+</div>
+<div class="w-0.5 bg-slate-200 dark:bg-slate-700 h-full -mt-2 -mb-2"></div>
+</div>
+<div class="pb-10 pt-2">
+<span class="text-primary text-sm font-bold tracking-widest uppercase">2013</span>
+<h3 class="text-slate-900 dark:text-white text-xl font-bold mt-1">Založenie školy</h3>
+<p class="text-slate-500 dark:text-slate-400 mt-2">
+                        SwimShark vznikol ako malý projekt dvoch nadšencov s cieľom zlepšiť plaveckú gramotnosť v regióne.
+                    </p>
+</div>
+<!-- 2016 -->
+<div class="flex flex-col items-center">
+<div class="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex items-center justify-center text-primary z-10">
+<span class="material-symbols-outlined text-xl">pool</span>
+</div>
+<div class="w-0.5 bg-slate-200 dark:bg-slate-700 h-full -mt-2 -mb-2"></div>
+</div>
+<div class="pb-10 pt-2">
+<span class="text-primary text-sm font-bold tracking-widest uppercase">2016</span>
+<h3 class="text-slate-900 dark:text-white text-xl font-bold mt-1">Prvý vlastný bazén</h3>
+<p class="text-slate-500 dark:text-slate-400 mt-2">
+                        Otvorili sme naše prvé špecializované tréningové centrum s 25m bazénom.
+                    </p>
+</div>
+<!-- 2019 -->
+<div class="flex flex-col items-center">
+<div class="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex items-center justify-center text-primary z-10">
+<span class="material-symbols-outlined text-xl">group</span>
+</div>
+<div class="w-0.5 bg-slate-200 dark:bg-slate-700 h-full -mt-2 -mb-2"></div>
+</div>
+<div class="pb-10 pt-2">
+<span class="text-primary text-sm font-bold tracking-widest uppercase">2019</span>
+<h3 class="text-slate-900 dark:text-white text-xl font-bold mt-1">Rozšírenie tímu</h3>
+<p class="text-slate-500 dark:text-slate-400 mt-2">
+                        Náš tím sa rozrástol na 10 certifikovaných trénerov a pridali sme kurzy pre bábätká.
+                    </p>
+</div>
+<!-- 2023 -->
+<div class="flex flex-col items-center">
+<div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white z-10 shadow-lg shadow-primary/30">
+<span class="material-symbols-outlined text-xl">star</span>
+</div>
+</div>
+<div class="pt-2">
+<span class="text-primary text-sm font-bold tracking-widest uppercase">2023 - Súčasnosť</span>
+<h3 class="text-slate-900 dark:text-white text-xl font-bold mt-1">Lídri v regióne</h3>
+<p class="text-slate-500 dark:text-slate-400 mt-2">
+                        Dnes sme najväčšou plaveckou školou v meste s viac ako 500 absolventmi ročne.
+                    </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Team Section -->
+<div class="w-full py-16 md:py-24 px-4 md:px-10 bg-background-light dark:bg-background-dark">
+<div class="max-w-[1280px] mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+<div class="max-w-2xl">
+<h2 class="text-slate-900 dark:text-white text-3xl md:text-4xl font-bold mb-4">Spoznajte náš tím</h2>
+<p class="text-slate-600 dark:text-slate-400 text-lg">
+                        Naši tréneri sú nielen skvelí plavci, ale predovšetkým empatickí pedagógovia s medzinárodnými certifikátmi.
+                    </p>
+</div>
+<button class="hidden md:flex items-center gap-2 text-primary font-bold hover:gap-3 transition-all">
+                    Zobraziť všetkých <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Team Member 1 -->
+<div class="group relative overflow-hidden rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
+<div class="aspect-[4/5] w-full overflow-hidden bg-slate-200">
+<img alt="Peter Novák" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Male swimming coach smiling by the pool in a blue shirt" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEbw-OnmFp6QTdbDWh9xcrr_U2n4YtPiY1hikQc8O1pQP2gRr63Vc6-9GWz7j6mrukL4wT-LGHnX2_npcHt3qUEQhxJuB9cfw1PCPuyH9KJx60BIs_9Z7-IhzTwR0OteDAQUu_ttOCte5OH2R9dS3A_QBt6aD7dvp5KC9eEUwPDi8dTz24VVz3XRh2e-FamNXLAz4sPVEhA-XWvPdALyi7RdA4L7516DAbiHzjJWdHI4skzObS6eeiWO31SlMYZCAcQMIT21Od7aw"/>
+</div>
+<div class="p-4">
+<p class="text-xs font-bold text-primary uppercase tracking-wide mb-1">Hlavný Tréner</p>
+<h3 class="text-lg font-bold text-slate-900 dark:text-white">Peter Novák</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400 mt-1">Bývalý reprezentant SR, špecialista na techniku kraul.</p>
+</div>
+</div>
+<!-- Team Member 2 -->
+<div class="group relative overflow-hidden rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
+<div class="aspect-[4/5] w-full overflow-hidden bg-slate-200">
+<img alt="Jana Kováčová" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Female swimming instructor smiling warmly" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNhY-StliS010OytrPhxJ-lWJVur1cZ54ZJ5ZYPs2fLsOuNaIYpnnutCVOQq8LuKT-SW8cXvrV-CMh6G4JRuUUhhjJkM724WffJePaSUHlUG7J3p0RvoBawKozBTY-Nuyj37X9QtsIg3F6IIxf-0FCjhUWvd2xiUZiV_n8So8HWU0vQ7nKnV7epTPoST3uUQok0j8o_nBjkmKcFkk0_btIPrF-aLdMnC01LkA-FOlGFyoom4zFJ0Up70Ka2rruGTF_Ojut1qObvA4"/>
+</div>
+<div class="p-4">
+<p class="text-xs font-bold text-primary uppercase tracking-wide mb-1">Trénerka Detí</p>
+<h3 class="text-lg font-bold text-slate-900 dark:text-white">Jana Kováčová</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400 mt-1">Certifikovaná inštruktorka pre dojčatá a batoľatá.</p>
+</div>
+</div>
+<!-- Team Member 3 -->
+<div class="group relative overflow-hidden rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
+<div class="aspect-[4/5] w-full overflow-hidden bg-slate-200">
+<img alt="Michal Horváth" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Male fitness coach looking confident" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBg7kB1Cbg8qfAHYtqFFOU_qRrca7N0dqY5ZgCoJ_C-v7TjHCaWfIsEHAJSaWmiJTyGeBjinvBBLrCOPICa9KUOtzIKRMXsPwiU1JoI0lexqqqRgjCJ0kq1uzSzCpjbDQxPpmue2r-R2ADEfIhcLZPcdudyriowRv8FtblI7lqKLBMFNIFKQZjjJ--65YAE4tGr5igxvV7xDA3FmTdy3xZ0FMaeYoJnI9WqYkZTkU-k_exJqAQotgFA3Lw_c32HIXBBxu1mDw7cx0Y"/>
+</div>
+<div class="p-4">
+<p class="text-xs font-bold text-primary uppercase tracking-wide mb-1">Kondičný Tréner</p>
+<h3 class="text-lg font-bold text-slate-900 dark:text-white">Michal Horváth</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400 mt-1">Zameriava sa na silovú prípravu a vytrvalosť.</p>
+</div>
+</div>
+<!-- Team Member 4 -->
+<div class="group relative overflow-hidden rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
+<div class="aspect-[4/5] w-full overflow-hidden bg-slate-200">
+<img alt="Elena Malá" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Female administrative manager smiling in professional attire" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0dty2-fNMT_84TtbUILrDZJWmNFzYpeVNwbrQXtX5DPxW9vPVcFIvOiZ114NIvxVLWmpv-SMSUw9Hf8NvF_Y8e1gGmb4ca9wOU2vT-PQtnrBeLmen0QoxQ-clAaV_O0R0foRYhlaCjw0u8KyD0VPgpi_79w97hG0eW2IGiMIp84q4YfB-H_ZJUXHqU08ZdEkd4ugSzYN80scM3SdfGw0MWYbPsboGThXMgfBPyTyVnm1bxJsTUns6eT3xF_pGtx8RJvoleExPE9c"/>
+</div>
+<div class="p-4">
+<p class="text-xs font-bold text-primary uppercase tracking-wide mb-1">Manažérka Kurzov</p>
+<h3 class="text-lg font-bold text-slate-900 dark:text-white">Elena Malá</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400 mt-1">Vaša prvá kontaktná osoba pre všetky otázky.</p>
+</div>
+</div>
+</div>
+<div class="mt-8 flex md:hidden justify-center">
+<button class="flex items-center gap-2 text-primary font-bold">
+                    Zobraziť všetkých <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- CTA Section -->
+<div class="w-full px-4 md:px-10 py-16">
+<div class="max-w-[1280px] mx-auto bg-primary rounded-2xl overflow-hidden relative shadow-2xl">
+<!-- Background Pattern Overlay -->
+<div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#ffffff 2px, transparent 2px); background-size: 32px 32px;"></div>
+<div class="relative z-10 flex flex-col md:flex-row items-center justify-between p-8 md:p-16 gap-8 text-center md:text-left">
+<div class="flex flex-col gap-4 max-w-2xl">
+<h2 class="text-white text-3xl md:text-4xl font-black">Pripravení skočiť do vody?</h2>
+<p class="text-blue-100 text-lg">Pridajte sa k stovkám spokojných plavcov. Prvá lekcia je na skúšku zdarma.</p>
+</div>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="px-8 py-4 bg-white text-primary rounded-lg font-bold text-lg hover:bg-slate-100 transition-colors shadow-lg whitespace-nowrap">
+                        Rezervovať kurz
+                    </button>
+<button class="px-8 py-4 bg-transparent border-2 border-white text-white rounded-lg font-bold text-lg hover:bg-white/10 transition-colors whitespace-nowrap">
+                        Kontaktujte nás
+                    </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<footer class="w-full bg-background-dark text-slate-400 py-12 px-4 md:px-10 border-t border-slate-800">
+<div class="max-w-[1280px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-2 text-white">
+<span class="material-symbols-outlined text-primary text-2xl">pool</span>
+<h3 class="text-lg font-bold">SwimShark</h3>
+</div>
+<p class="text-sm leading-relaxed">
+                    Profesionálna plavecká škola zameraná na kvalitu, bezpečnosť a radosť z pohybu.
+                </p>
+<div class="flex gap-4 mt-2">
+<a class="text-slate-400 hover:text-white transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="text-slate-400 hover:text-white transition-colors" href="#"><span class="material-symbols-outlined">alternate_email</span></a>
+<a class="text-slate-400 hover:text-white transition-colors" href="#"><span class="material-symbols-outlined">photo_camera</span></a>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="text-white font-bold">Rýchle odkazy</h4>
+<nav class="flex flex-col gap-2 text-sm">
+<a class="hover:text-primary transition-colors" href="#">Domov</a>
+<a class="hover:text-primary transition-colors" href="#">O nás</a>
+<a class="hover:text-primary transition-colors" href="#">Kurzy pre dospelých</a>
+<a class="hover:text-primary transition-colors" href="#">Kurzy pre deti</a>
+</nav>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="text-white font-bold">Informácie</h4>
+<nav class="flex flex-col gap-2 text-sm">
+<a class="hover:text-primary transition-colors" href="#">Cenník</a>
+<a class="hover:text-primary transition-colors" href="#">Rozvrh</a>
+<a class="hover:text-primary transition-colors" href="#">Časté otázky (FAQ)</a>
+<a class="hover:text-primary transition-colors" href="#">Obchodné podmienky</a>
+</nav>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="text-white font-bold">Kontakt</h4>
+<div class="flex flex-col gap-3 text-sm">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-base mt-0.5">location_on</span>
+<span>Plaváreň Pasienky<br/>Junácka 4, Bratislava</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-base">call</span>
+<span>+421 900 123 456</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-base">mail</span>
+<span>info@swimshark.sk</span>
+</div>
+</div>
+</div>
+</div>
+<div class="max-w-[1280px] mx-auto mt-12 pt-8 border-t border-slate-800 text-center text-xs text-slate-600">
+            © 2023 SwimShark Plavecká škola. Všetky práva vyhradené.
+        </div>
+</footer>
+</body></html>

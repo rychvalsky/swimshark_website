@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html class="light" lang="sk"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kontakt SwimShark</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;family=Noto+Sans:wght@300..800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#137fec",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101922",
+              "surface-light": "#ffffff",
+              "surface-dark": "#1a2633",
+            },
+            fontFamily: {
+              "display": ["Lexend", "sans-serif"],
+              "body": ["Noto Sans", "sans-serif"],
+            },
+            borderRadius: {
+              "DEFAULT": "0.25rem", 
+              "lg": "0.5rem", 
+              "xl": "0.75rem", 
+              "full": "9999px"
+            },
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#0d141b] dark:text-slate-200 font-display">
+<!-- Navbar -->
+<div class="relative flex w-full flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-[#e7edf3] dark:border-gray-800 bg-surface-light dark:bg-surface-dark px-10 py-3 sticky top-0 z-50">
+<div class="flex items-center gap-4 text-[#0d141b] dark:text-white">
+<div class="size-8 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-3xl">pool</span>
+</div>
+<h2 class="text-[#0d141b] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">SwimShark</h2>
+</div>
+<div class="flex flex-1 justify-end gap-8">
+<div class="hidden md:flex items-center gap-9">
+<a class="text-[#0d141b] dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors text-sm font-medium leading-normal" href="#">Domov</a>
+<a class="text-[#0d141b] dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors text-sm font-medium leading-normal" href="#">Kurzy</a>
+<a class="text-[#0d141b] dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors text-sm font-medium leading-normal" href="#">O nás</a>
+<a class="text-primary text-sm font-bold leading-normal" href="#">Kontakt</a>
+<a class="text-[#0d141b] dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors text-sm font-medium leading-normal" href="#">FAQ</a>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary hover:bg-blue-600 transition-colors text-slate-50 text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Prihlásiť sa</span>
+</button>
+</div>
+</header>
+</div>
+<!-- Hero Section -->
+<div class="relative w-full h-[320px] bg-cover bg-center bg-no-repeat flex items-center justify-center" data-alt="Abstract blue water waves pattern" style='background-image: linear-gradient(rgba(19, 127, 236, 0.8), rgba(16, 25, 34, 0.8)), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBWYGsBH9uR7j41hB1ZdgO91BJBZ34n6QJFoJCbPlzQ9pSn13pvI3TKef62yw0n_GXwDeOpv400qZPg82PgJj7UvFUkx3AU1UqVTDUS71fsQdTSS5Y-n8ctHeNI3SIwL7_6HmJmjeEKhsGnVDTco8bur1HqEItoak-PVpRD4JfJ6fdDjFHb0IsW5nmN_mHPBeCcbEJv41F_zFf0GyzjHMTeMcT33TgONKjpWGuTqwlnyNMqiBbARK6F0_IfcLjpah_xN4duk6G1wDI");'>
+<div class="text-center px-4">
+<h1 class="text-white text-4xl md:text-5xl font-black leading-tight tracking-[-0.033em] mb-3 drop-shadow-lg">
+                Kontaktujte Nás
+            </h1>
+<p class="text-slate-100 text-lg font-medium max-w-2xl mx-auto drop-shadow-md">
+                Máte otázky ohľadom kurzov alebo tréningov? Sme tu pre vás každý deň.
+            </p>
+</div>
+</div>
+<!-- Main Content -->
+<div class="layout-container flex h-full grow flex-col px-4 md:px-10 lg:px-40 py-12">
+<div class="layout-content-container max-w-[1200px] mx-auto w-full">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+<!-- Left Column: Info & Map -->
+<div class="flex flex-col gap-8">
+<!-- Header -->
+<div>
+<h2 class="text-[#0d141b] dark:text-white text-[28px] font-bold leading-tight tracking-[-0.015em] mb-4">
+                            Kde nás nájdete
+                        </h2>
+<p class="text-slate-500 dark:text-slate-400">
+                            Naša hlavná pobočka sa nachádza v Bratislave. Radi vás privítame osobne počas našich otváracích hodín.
+                        </p>
+</div>
+<!-- Contact Details List -->
+<div class="flex flex-col gap-2">
+<!-- Item: Address -->
+<div class="flex items-center gap-4 bg-surface-light dark:bg-surface-dark px-5 py-4 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 transition-transform hover:-translate-y-1 duration-300">
+<div class="text-primary flex items-center justify-center rounded-lg bg-blue-50 dark:bg-slate-800 shrink-0 size-12">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-[#0d141b] dark:text-white text-base font-bold leading-normal">Adresa</p>
+<p class="text-[#4c739a] dark:text-slate-400 text-sm font-normal leading-normal">Plaváreň Pasienky, Junácka 4, Bratislava</p>
+</div>
+</div>
+<!-- Item: Phone -->
+<div class="flex items-center gap-4 bg-surface-light dark:bg-surface-dark px-5 py-4 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 transition-transform hover:-translate-y-1 duration-300">
+<div class="text-primary flex items-center justify-center rounded-lg bg-blue-50 dark:bg-slate-800 shrink-0 size-12">
+<span class="material-symbols-outlined">call</span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-[#0d141b] dark:text-white text-base font-bold leading-normal">Telefón</p>
+<a class="text-[#4c739a] dark:text-slate-400 text-sm font-normal leading-normal hover:text-primary transition-colors" href="tel:+421900123456">+421 900 123 456</a>
+</div>
+</div>
+<!-- Item: Email -->
+<div class="flex items-center gap-4 bg-surface-light dark:bg-surface-dark px-5 py-4 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700 transition-transform hover:-translate-y-1 duration-300">
+<div class="text-primary flex items-center justify-center rounded-lg bg-blue-50 dark:bg-slate-800 shrink-0 size-12">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-[#0d141b] dark:text-white text-base font-bold leading-normal">Email</p>
+<a class="text-[#4c739a] dark:text-slate-400 text-sm font-normal leading-normal hover:text-primary transition-colors" href="mailto:info@swimshark.sk">info@swimshark.sk</a>
+</div>
+</div>
+</div>
+<!-- Opening Hours -->
+<div class="bg-surface-light dark:bg-surface-dark p-6 rounded-xl shadow-sm border border-slate-100 dark:border-slate-700">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-primary">schedule</span>
+<h3 class="text-[#0d141b] dark:text-white font-bold text-lg">Otváracie hodiny</h3>
+</div>
+<ul class="space-y-3">
+<li class="flex justify-between text-sm">
+<span class="text-slate-500 dark:text-slate-400 font-medium">Pondelok - Piatok</span>
+<span class="text-[#0d141b] dark:text-white font-bold">06:00 - 21:00</span>
+</li>
+<li class="flex justify-between text-sm">
+<span class="text-slate-500 dark:text-slate-400 font-medium">Sobota</span>
+<span class="text-[#0d141b] dark:text-white font-bold">08:00 - 20:00</span>
+</li>
+<li class="flex justify-between text-sm">
+<span class="text-slate-500 dark:text-slate-400 font-medium">Nedeľa</span>
+<span class="text-[#0d141b] dark:text-white font-bold">08:00 - 18:00</span>
+</li>
+</ul>
+</div>
+<!-- Interactive Map Image Placeholder -->
+<div class="relative w-full aspect-video rounded-xl overflow-hidden shadow-md group cursor-pointer border border-slate-200 dark:border-slate-700">
+<img alt="Map Location" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Map view of swimming pool location" data-location="Bratislava" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaPXA-kscOT1rhlJiBzfrKxXNgNaa0LYGl96IoKQ4x2JlIGGC9hMbxHo28tHdXetn6ZfHZUZGfM_n5j_SbqN5unMeVjY5Jkf4NJrz67dM8gmmPS6BcF53GfDoQ2VCiogrnxkgx7AnB59R3L5Mo6x5HAvUlAYclLFTJd-WuixpZZ7Tb7bfwU0Zy3_46TdaEEhQ5Ie3R61EPhfIlGysW5aNA2oKIvs2550xYO7meFoTXADn1qMqSDgO10ZJpleBLqJWj3ekPkIDKqD4"/>
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors flex items-center justify-center">
+<button class="bg-white text-[#0d141b] px-6 py-2 rounded-full font-bold shadow-lg flex items-center gap-2 hover:bg-gray-50 transition-colors">
+<span class="material-symbols-outlined text-primary">map</span>
+                                Otvoriť mapu
+                            </button>
+</div>
+</div>
+</div>
+<!-- Right Column: Contact Form -->
+<div class="flex flex-col">
+<div class="bg-surface-light dark:bg-surface-dark p-8 rounded-2xl shadow-lg border border-slate-100 dark:border-slate-700 h-full">
+<div class="mb-8">
+<h2 class="text-[#0d141b] dark:text-white text-[28px] font-bold leading-tight tracking-[-0.015em] mb-2">
+                                Napíšte nám
+                            </h2>
+<p class="text-slate-500 dark:text-slate-400 text-sm">
+                                Vyplňte formulár nižšie a my sa vám ozveme do 24 hodín.
+                            </p>
+</div>
+<form class="flex flex-col gap-6">
+<!-- Name Input -->
+<div class="flex flex-col gap-2">
+<label class="text-[#0d141b] dark:text-slate-200 text-sm font-bold" for="name">Meno a Priezvisko</label>
+<input class="w-full h-12 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 px-4 text-[#0d141b] dark:text-white placeholder-slate-400 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" id="name" placeholder="Jozef Novák" type="text"/>
+</div>
+<!-- Email Input -->
+<div class="flex flex-col gap-2">
+<label class="text-[#0d141b] dark:text-slate-200 text-sm font-bold" for="email">Váš Email</label>
+<input class="w-full h-12 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 px-4 text-[#0d141b] dark:text-white placeholder-slate-400 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" id="email" placeholder="jozef@priklad.sk" type="email"/>
+</div>
+<!-- Subject Select -->
+<div class="flex flex-col gap-2">
+<label class="text-[#0d141b] dark:text-slate-200 text-sm font-bold" for="subject">Ako vám môžeme pomôcť?</label>
+<div class="relative">
+<select class="w-full h-12 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 px-4 text-[#0d141b] dark:text-white focus:border-primary focus:ring-1 focus:ring-primary outline-none appearance-none transition-all cursor-pointer" id="subject">
+<option disabled="" selected="" value="">Vyberte predmet správy</option>
+<option value="courses">Detské plavecké kurzy</option>
+<option value="adults">Tréningy pre dospelých</option>
+<option value="individual">Individuálne lekcie</option>
+<option value="other">Iné</option>
+</select>
+<div class="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-slate-500">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Message Textarea -->
+<div class="flex flex-col gap-2">
+<label class="text-[#0d141b] dark:text-slate-200 text-sm font-bold" for="message">Správa</label>
+<textarea class="w-full rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 p-4 text-[#0d141b] dark:text-white placeholder-slate-400 focus:border-primary focus:ring-1 focus:ring-primary outline-none resize-none transition-all" id="message" placeholder="Napíšte nám vašu otázku..." rows="5"></textarea>
+</div>
+<!-- Submit Button -->
+<button class="mt-2 w-full h-12 bg-primary hover:bg-blue-600 text-white font-bold rounded-lg shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2" type="button">
+<span>Odoslať správu</span>
+<span class="material-symbols-outlined text-sm">send</span>
+</button>
+</form>
+</div>
+</div>
+</div>
+<!-- FAQ Teaser Section -->
+<div class="mt-20 flex flex-col items-center justify-center text-center">
+<div class="bg-white dark:bg-surface-dark border border-slate-200 dark:border-slate-700 rounded-2xl p-8 max-w-3xl w-full shadow-sm">
+<div class="size-12 bg-blue-100 dark:bg-slate-800 rounded-full flex items-center justify-center mx-auto mb-4 text-primary">
+<span class="material-symbols-outlined">help</span>
+</div>
+<h3 class="text-2xl font-bold text-[#0d141b] dark:text-white mb-2">Často kladené otázky</h3>
+<p class="text-slate-500 dark:text-slate-400 mb-6">
+                        Skôr než nám napíšete, možno nájdete odpoveď v našej sekcii FAQ. Pripravili sme pre vás odpovede na najčastejšie otázky ohľadom parkovania, vybavenia a platieb.
+                    </p>
+<a class="inline-flex items-center justify-center text-primary font-bold hover:underline gap-1" href="#">
+                        Prejsť na FAQ
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Simple Footer -->
+<footer class="bg-surface-light dark:bg-surface-dark border-t border-[#e7edf3] dark:border-gray-800 py-8 px-10">
+<div class="flex flex-col md:flex-row justify-between items-center gap-4 max-w-[1200px] mx-auto">
+<div class="flex items-center gap-2 text-[#0d141b] dark:text-white">
+<span class="material-symbols-outlined text-primary">pool</span>
+<span class="font-bold">SwimShark</span>
+</div>
+<div class="text-slate-500 dark:text-slate-400 text-sm">
+                © 2024 SwimShark Plavecká Škola. Všetky práva vyhradené.
+            </div>
+<div class="flex gap-4">
+<a class="text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="sr-only">Facebook</span>
+<!-- Facebook Icon placeholder using material symbol for generic link -->
+<span class="material-symbols-outlined">public</span>
+</a>
+<a class="text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="sr-only">Instagram</span>
+<span class="material-symbols-outlined">photo_camera</span>
+</a>
+</div>
+</div>
+</footer>
+</body></html>
